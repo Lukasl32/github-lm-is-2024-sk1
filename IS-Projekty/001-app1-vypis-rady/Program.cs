@@ -2,6 +2,8 @@
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Console.Write("Ahoj, ");
+        Console.WriteLine("jak se máš");
+        Console.ReadKey();
     }
 }
