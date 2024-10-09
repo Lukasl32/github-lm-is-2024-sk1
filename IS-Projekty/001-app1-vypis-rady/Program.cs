@@ -2,8 +2,17 @@
 {
     private static void Main(string[] args)
     {
-        Console.Write("Ahoj, ");
-        Console.WriteLine("jak se máš");
-        Console.ReadKey();
+        string? again = "a";
+        while (again == "a")
+        {
+            Console.Clear();
+            Console.WriteLine("******* Výpis řady čísel *******");
+            Console.WriteLine("********************************");
+            Console.WriteLine("******** Lukáš Moravec *********");
+
+            Console.WriteLine($"Pro opakování programu stiskni klávesu \"{again}\"");
+            Console.Write("Volba: ");
+            again = Console.ReadLine();
+        }
     }
 }
