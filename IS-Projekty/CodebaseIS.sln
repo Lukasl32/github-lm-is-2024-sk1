@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002a-app2a-soucet-cifer", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "002b-app2b-soucet-cifer", "002b-app2b-soucet-cifer\002b-app2b-soucet-cifer.csproj", "{0A8870E1-625C-4A37-B49E-DF632D6F9E13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003a-app3a-obdelnik", "003a-app3a-obdelnik\003a-app3a-obdelnik.csproj", "{C1401BA6-4702-4D2E-901D-98855417D9B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "003b-app3b-pravouhly-trojuhelnik", "003b-app3b-pravouhly-trojuhelnik\003b-app3b-pravouhly-trojuhelnik.csproj", "{B10FA3D9-091F-4EF3-92C0-10470F82E3AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,14 @@ Global
 		{0A8870E1-625C-4A37-B49E-DF632D6F9E13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A8870E1-625C-4A37-B49E-DF632D6F9E13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A8870E1-625C-4A37-B49E-DF632D6F9E13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1401BA6-4702-4D2E-901D-98855417D9B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1401BA6-4702-4D2E-901D-98855417D9B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1401BA6-4702-4D2E-901D-98855417D9B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1401BA6-4702-4D2E-901D-98855417D9B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B10FA3D9-091F-4EF3-92C0-10470F82E3AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B10FA3D9-091F-4EF3-92C0-10470F82E3AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B10FA3D9-091F-4EF3-92C0-10470F82E3AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B10FA3D9-091F-4EF3-92C0-10470F82E3AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
