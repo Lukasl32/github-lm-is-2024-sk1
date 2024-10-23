@@ -12,9 +12,9 @@ internal class Program
             Console.WriteLine("********************************");
             Console.WriteLine("******** Lukáš Moravec *********");
 
-            int count;
-            int min;
-            int max;
+            int count, min, max;
+            int positiveCount = 0, negativeCount = 0, zeroCount = 0;
+            int evenCount = 0, oddCount = 0;
 
             Console.Write("Zadejte počet čísel k vygenerování N (celé číslo): ");
             while (!int.TryParse(Console.ReadLine(), out count))
@@ -48,7 +48,19 @@ internal class Program
             {
                 output[i] = random.Next(min, max+1);
                 Console.Write(" {0} ", output[i]);
+                if (output[i] > 0)
+                    positiveCount++;
+                else if (output[i] < 0)
+                    negativeCount++;
+                else 
+                    zeroCount++;
+
+                if (output[i] % 2 == 0)
+                    evenCount++;
+                else oddCount++;
             }
+            Console.WriteLine($"\nPočet kladných čísel: {positiveCount}, záporných čísel: {negativeCount} a nul: {zeroCount}");
+            Console.WriteLine($"Počet sudých čísel: {evenCount}, počet lichých čísel: {oddCount}");
 
             Console.ReadKey();
         }
