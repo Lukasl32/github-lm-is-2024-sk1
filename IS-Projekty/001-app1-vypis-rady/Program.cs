@@ -16,13 +16,25 @@
             Console.Write("Zadejte 1. celé číslo řady: ");
             while (!int.TryParse(Console.ReadLine(), out first))
                 Console.Write("Chybně zadané celé číslo!! \nZadejte znovu: ");
-            Console.Write("Zvolené první číslo řady: {0}", first);
+            Console.WriteLine("Zvolené první číslo řady: {0}", first);
 
             int last;
             Console.Write("Zadejte poslední celé číslo řady: ");
             while (!int.TryParse(Console.ReadLine(), out last))
                 Console.Write("Chybně zadané celé číslo!! \nZadejte znovu: ");
-            Console.Write("Zvolené první číslo řady: {0}", last);
+            Console.WriteLine("Zvolené první číslo řady: {0}", last);
+
+            int step;
+            Console.Write("Zadejte krok, po kterém bude řada narůstat: ");
+            while (!int.TryParse(Console.ReadLine(), out step))
+                Console.Write("Chybně zadané celé číslo!! \nZadejte znovu: ");
+            Console.WriteLine("Zvolený krok: {0}", step);
+
+            for (int i = first; i < last; i+=step)
+            {
+                Console.Write(" {0} ", i);
+            }
+            Console.WriteLine();
 
             Console.WriteLine($"Pro opakování programu stiskni klávesu \"{again}\"");
             Console.Write("Volba: ");
