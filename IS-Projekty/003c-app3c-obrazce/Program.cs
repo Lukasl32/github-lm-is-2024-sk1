@@ -50,14 +50,14 @@ internal class Program
                     case 2:
                         if (size % 2 != 0)
                             size++;
-                        Console.WriteLine($"\n Obrazec 2 (podle zadání (4)) [pro toto zadání dojde ke změně velikosti na sudé číslo (size={size})]");
+                        Console.WriteLine($"\n Obrazec 2 (podle zadání (19)) [pro toto zadání dojde ke změně velikosti na sudé číslo (size={size})]");
                         Console.WriteLine("-------------------------------\n");
                         Shape02(size);
                         break;
                     case 3:
-                        Console.WriteLine("\n Obrazec 3 (podle zadání (4))");
+                        Console.WriteLine("\n Obrazec 3 (podle zadání (12))");
                         Console.WriteLine("-------------------------------\n");
-
+                        Shape03(size);
                         break;
                     default:
                         repeat = true;
@@ -127,6 +127,20 @@ internal class Program
                 end++;
             }
 
+            Console.WriteLine();
+        }
+    }
+    private static void Shape03(int size)
+    {
+        for (int row = 0; row < size; row++)
+        {
+            for (int col = 0; col < size; col++)
+            {
+                if ((row + col) % 2 == 0)
+                    Console.Write("  ");
+                else
+                    Console.Write("* ");
+            }
             Console.WriteLine();
         }
     }
