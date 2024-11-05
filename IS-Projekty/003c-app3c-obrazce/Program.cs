@@ -26,9 +26,9 @@ internal class Program
                 Console.Write("Chybně zadané celé číslo!! \nZadejte znovu: ");
 
             Console.WriteLine("\nJaký obrazec chcete vykreslit?");
-            Console.WriteLine("1 - obrazec");
-            Console.WriteLine("2 - ");
-            Console.WriteLine("3 - ");
+            Console.WriteLine("1 - Obrazec 1 (podle zadání (4))");
+            Console.WriteLine("2 - Obrazec 2 (podle zadání (19))");
+            Console.WriteLine("3 - Obrazec 3 (podle zadání (12))");
             Console.WriteLine("------------");
             Console.Write("Volba: ");
             
