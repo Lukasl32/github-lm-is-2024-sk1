@@ -91,6 +91,43 @@ internal class Program
 
     private static void Shape02(int size)
     {
-        
+        int start = 0;
+        int end = size - 1;
+        bool decrease = true;
+
+        for (int row = 0; row < size; row++)
+        {
+            if (row < size / 2)
+            {
+                for (int col = 0; col < size; col++)
+                {
+                    if (col >= start && col <= end)
+                        Console.Write("* ");
+                    else
+                        Console.Write("  ");
+                }
+
+                if (row + 1 != size / 2)
+                {
+                    start++;
+                    end--;
+                }
+            }
+            else
+            {
+                for (int col = 0; col < size; col++)
+                {
+                    if (col >= start && col <= end)
+                        Console.Write("* ");
+                    else
+                        Console.Write("  ");
+                }
+
+                start--;
+                end++;
+            }
+
+            Console.WriteLine();
+        }
     }
 }
