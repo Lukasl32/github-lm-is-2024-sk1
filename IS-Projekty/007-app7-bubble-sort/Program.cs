@@ -54,11 +54,11 @@ internal class Program
             BubbleSort(output);
             watch.Stop();
 
-            Console.WriteLine("\nNáhodná čísla po seřazení:");
+            Console.WriteLine("\nPole po seřazení:");
             PrintArray<int>(output);
 
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"\n[Doba řezení: {watch.Elapsed}]");
+            Console.WriteLine($"\n[Doba zpracování: {watch.Elapsed}]");
             Console.ResetColor();
 
             Console.ReadKey();
