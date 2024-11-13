@@ -112,21 +112,9 @@ internal class Program
         }
     }
 
-    private static void SelectionSort(int[] array)
+    private static void SelectionSort<T>(T[] array)
     {
-        int temp, min;
-        for (int i = 0; i < (array.Length - 1); i++)
-        {
-            min = array.Length - 1;
-            // hledání minima
-            for (int j = i; j < (array.Length - 1); j++)
-                if (array[min] > array[j])
-                    min = j;
-            // prohození prvku
-            temp = array[min];
-            array[min] = array[i];
-            array[i] = temp;
-        }
+        
     }
 
     private static void InsertionSort<T>(T[] array)
