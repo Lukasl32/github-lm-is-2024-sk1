@@ -26,6 +26,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005-app5-max-min", "005-app
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006-app6-analyza-textu", "006-app6-analyza-textu\006-app6-analyza-textu.csproj", "{99AAC9C3-7D6B-48F7-A46B-564DAD28A8E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007-app7-bubble-sort", "007-app7-bubble-sort\007-app7-bubble-sort.csproj", "{A3287A52-BEF8-4C12-B120-BA525E947163}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -68,6 +70,10 @@ Global
 		{99AAC9C3-7D6B-48F7-A46B-564DAD28A8E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{99AAC9C3-7D6B-48F7-A46B-564DAD28A8E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{99AAC9C3-7D6B-48F7-A46B-564DAD28A8E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3287A52-BEF8-4C12-B120-BA525E947163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3287A52-BEF8-4C12-B120-BA525E947163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3287A52-BEF8-4C12-B120-BA525E947163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3287A52-BEF8-4C12-B120-BA525E947163}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
