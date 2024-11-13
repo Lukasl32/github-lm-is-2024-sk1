@@ -50,10 +50,16 @@ internal class Program
             Console.WriteLine();
 
             // ------------
-
+            var watch = System.Diagnostics.Stopwatch.StartNew();
             BubbleSort(output);
+            watch.Stop();
+
             Console.WriteLine("\nNáhodná čísla po seřazení:");
             PrintArray<int>(output);
+
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine($"\n[Doba řezení: {watch.Elapsed}]");
+            Console.ResetColor();
 
             Console.ReadKey();
         }
@@ -61,15 +67,20 @@ internal class Program
 
     private static void BubbleSort(int[] array, bool descending = true)
     {
+        int compares = 0, changes = 0;
         int temp;
+        Console.Write("Řazení... ");
+
         for (int i = 0; i < array.Length - 1; i++)
         {
             for (int j = 0; j < array.Length - i - 1; j++)
             {
+                compares++;
                 if (descending)
                 {
                     if (array[j] < array[j + 1]) // seřazení sestupně
                     {
+                        changes++;
                         temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
@@ -85,6 +96,7 @@ internal class Program
                 {
                     if (array[j] > array[j + 1]) // seřazení vzestupně
                     {
+                        changes++;
                         temp = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = temp;
@@ -99,6 +111,7 @@ internal class Program
 
             }
         }
+        Console.WriteLine($"(bylo provedeno {compares} porovnání a {changes} změn)");
     }
 
     private static void PrintArray<T>(T[] array)
