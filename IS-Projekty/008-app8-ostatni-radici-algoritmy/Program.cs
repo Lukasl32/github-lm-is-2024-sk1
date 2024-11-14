@@ -170,13 +170,28 @@ internal class Program
         }
     }
 
-    private static void CombSort<T>(T[] array)
+    private static void CombSort(int[] array)
     {
-
+        bool swapped = false;
+        int gap = array.Length;
+        while (gap != 1 || swapped)
+        {
+            gap = (int)(gap / 1.33);
+            swapped = false;
+            if (gap < 1) gap = 1;
+            for (int i = 0; i + gap < array.Length; i++)
+            {
+                if (array[i] < array[i+gap])
+                {
+                    (array[i + gap], array[i]) = (array[i], array[i + gap]);
+                    swapped = true;
+                }
+            }
+        }
     }
 
     private static void ShellSort<T>(T[] array)
     {
-
+        
     }
 }
