@@ -13,7 +13,7 @@ internal class Program
             Console.WriteLine("******** Lukáš Moravec *********");
 
             int count, minSet, maxSet;
-            int min = Int32.MaxValue, max = Int32.MinValue;
+            int min = int.MaxValue, max = int.MinValue;
             int minPos = -1, maxPos = -1;
 
             Console.Write("Zadejte počet čísel k vygenerování N (celé číslo): ");
