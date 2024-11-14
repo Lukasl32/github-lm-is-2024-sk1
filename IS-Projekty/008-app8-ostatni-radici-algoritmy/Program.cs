@@ -144,9 +144,30 @@ internal class Program
         }
     }
 
-    private static void ShakerSort<T>(T[] array)
+    private static void ShakerSort(int[] array)
     {
-
+        bool swapped;
+        for (int i = 0; i < array.Length / 2; i++)
+        {
+            swapped = false;
+            for (int j = 0; j < array.Length - 1 - i; j++)
+            {
+                if (array[j] < array[j + 1])
+                {
+                    (array[j + 1], array[j]) = (array[j], array[j + 1]); // přímé prohození prvků
+                    swapped = true;
+                }
+            }
+            for (int j = 0; j < array.Length - 2 - i; j++)
+            {
+                if (array[j] > array[j - 1])
+                {
+                    (array[j - 1], array[j]) = (array[j], array[j - 1]);
+                    swapped = true;
+                }
+            }
+            if (!swapped) break;
+        }
     }
 
     private static void CombSort<T>(T[] array)
