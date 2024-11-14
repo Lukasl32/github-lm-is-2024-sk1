@@ -181,7 +181,7 @@ internal class Program
             if (gap < 1) gap = 1;
             for (int i = 0; i + gap < array.Length; i++)
             {
-                if (array[i] < array[i+gap])
+                if (array[i] < array[i + gap])
                 {
                     (array[i + gap], array[i]) = (array[i], array[i + gap]);
                     swapped = true;
@@ -190,8 +190,31 @@ internal class Program
         }
     }
 
-    private static void ShellSort<T>(T[] array)
+    private static void ShellSort(int[] array)
     {
-        
+        int gap = array.Length / 2;
+        int j, temp;
+        while (gap > 0)
+        {
+            for (int i = 0; i < array.Length - gap; i++)
+            {
+                j = i + gap;
+                temp = array[j];
+                while (j >= gap && temp > array[j - gap])
+                {
+                    array[j] = array[j - gap];
+                    j -= gap;
+                }
+                array[j] = temp;
+            }
+            if (gap == 2)
+            {
+                gap = 1;
+            }
+            else
+            {
+                gap = (int)(gap / 2.2);
+            }
+        }
     }
 }
