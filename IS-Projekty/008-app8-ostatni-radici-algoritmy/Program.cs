@@ -18,8 +18,6 @@ internal class Program
             Console.WriteLine("******** Lukáš Moravec *********");
 
             int count, min, max;
-            int positiveCount = 0, negativeCount = 0, zeroCount = 0;
-            int evenCount = 0, oddCount = 0;
             int[] output, arrayBackup;
             Random random = new();
 
@@ -129,9 +127,21 @@ internal class Program
         }
     }
 
-    private static void InsertionSort<T>(T[] array)
+    private static void InsertionSort(int[] array)
     {
-
+        int item, j;
+        for (int i = 1; i <= (array.Length - 1); i++)
+        {
+            // ulozeni prvku
+            item = array[i];
+            j = i - 1;
+            while ((j >= 0) && (array[j] > item))
+            {
+                array[j + 1] = array[j];
+                j--;
+            }
+            array[j + 1] = item;
+        }
     }
 
     private static void ShakerSort<T>(T[] array)
