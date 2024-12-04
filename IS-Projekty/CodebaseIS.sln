@@ -34,6 +34,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008-app8-ostatni-radici-alg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "010-app10-konvergetni-rady", "010-app10-konvergetni-rady\010-app10-konvergetni-rady.csproj", "{3D9C2DE3-10D5-4868-A6D8-9D2F8C2725F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "011-app11-intervaly", "011-app11-intervaly\011-app11-intervaly.csproj", "{11973BE4-6E4E-4541-A91E-6BB7BBA716F6}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "000-doucovani", "000-doucovani\000-doucovani.csproj", "{233FB95B-0331-4F9A-B55A-7D6C885715F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015-app15-NSD-a-NSN", "015-app15-NSD-a-NSN\015-app15-NSD-a-NSN.csproj", "{0146FAAA-65FA-4D46-98FC-73104B1C2EB3}"
