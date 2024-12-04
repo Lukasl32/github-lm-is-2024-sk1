@@ -33,6 +33,16 @@ static T? GetValue<T>(string text)
     }
 }
 
+static void PrintArray<T>(T[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (i == 0) Console.Write("[{0}; ", array[i]);
+        else if (i == array.Length - 1) Console.WriteLine("{0}]", array[i]);
+        else Console.Write("{0}; ", array[i]);
+    }
+}
+
 static int[] GenerateRandomArray()
 {
     (int genCount, int genMin, int genMax) = GetRandomGeneratorConfig();
