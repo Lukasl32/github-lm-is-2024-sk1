@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "010-app10-konvergetni-rady"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "000-doucovani", "000-doucovani\000-doucovani.csproj", "{233FB95B-0331-4F9A-B55A-7D6C885715F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "015-app15-NSD-a-NSN", "015-app15-NSD-a-NSN\015-app15-NSD-a-NSN.csproj", "{0146FAAA-65FA-4D46-98FC-73104B1C2EB3}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "000-BASE", "000-BASE\000-BASE.csproj", "{31732F9C-E266-4F8E-B24A-9A7875A9F024}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "016-app16-Fibonacciho-posloupnost", "016-app16-Fibonacciho-posloupnost\016-app16-Fibonacciho-posloupnost.csproj", "{7247E651-268A-4FFE-9806-0288CD5EA19C}"
