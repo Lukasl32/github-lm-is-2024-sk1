@@ -30,7 +30,7 @@
                 Console.Write("Chybně zadané celé číslo!! \nZadejte znovu: ");
             Console.WriteLine("Zvolený krok: {0}", step);
 
-            for (int i = first; i < last; i+=step)
+            for (int i = first; i < last; i += step)
             {
                 Console.Write(" {0} ", i);
             }

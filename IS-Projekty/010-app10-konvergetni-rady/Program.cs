@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-
-namespace _010_app10_konvergetni_rady;
+﻿namespace _010_app10_konvergetni_rady;
 
 internal class Program
 {

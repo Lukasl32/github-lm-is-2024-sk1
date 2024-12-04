@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-Console.WriteLine("Kombinovaná úloha - Lukáš Moravec\n");
+﻿Console.WriteLine("Kombinovaná úloha - Lukáš Moravec\n");
 
 int count, min, max;
 bool valid = true;

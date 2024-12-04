@@ -35,7 +35,7 @@ static ulong GetNSD(ulong a, ulong b)
 
 static ulong GetNSN(ulong a, ulong b)
 {
-    return (a*b)/GetNSD(a, b);
+    return (a * b) / GetNSD(a, b);
 }
 
 static T? GetValue<T>(string text)

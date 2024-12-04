@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
-
-namespace _003c_app3c_obrazce;
+﻿namespace _003c_app3c_obrazce;
 
 internal class Program
 {
@@ -31,7 +28,7 @@ internal class Program
             Console.WriteLine("3 - Obrazec 3 (podle zadání (12))");
             Console.WriteLine("------------");
             Console.Write("Volba: ");
-            
+
             int selection;
             bool repeat = false;
             do

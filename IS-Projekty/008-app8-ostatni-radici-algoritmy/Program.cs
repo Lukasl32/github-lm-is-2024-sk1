@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
-using System.Reflection.PortableExecutable;
-using System.Runtime.InteropServices;
+﻿using System.Diagnostics;
 
 namespace _008_app8_ostatni_radici_algoritmy;
 

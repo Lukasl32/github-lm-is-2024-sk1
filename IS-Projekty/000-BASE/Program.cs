@@ -19,11 +19,13 @@ static T? GetValue<T>(string text)
     Console.Write(text);
     while (true)
     {
-        try {
+        try
+        {
             value = (T?)Convert.ChangeType(Console.ReadLine(), typeof(T));
             return value;
         }
-        catch (Exception) {
+        catch (Exception)
+        {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Chybně zadaná hodnota!!");
             Console.ResetColor();

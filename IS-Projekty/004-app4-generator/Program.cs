@@ -46,13 +46,13 @@ internal class Program
             Console.WriteLine("\nNáhodná čísla: ");
             for (int i = 0; i < output.Length; i++)
             {
-                output[i] = random.Next(min, max+1);
+                output[i] = random.Next(min, max + 1);
                 Console.Write(" {0} ", output[i]);
                 if (output[i] > 0)
                     positiveCount++;
                 else if (output[i] < 0)
                     negativeCount++;
-                else 
+                else
                     zeroCount++;
 
                 if (output[i] % 2 == 0)
